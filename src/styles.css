@@ -1,0 +1,1152 @@
+@font-face {
+  font-family:'Roboto' ;
+  src: url('./font/roboto/Roboto-ThinItalic.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./font/montserrat/Montserrat-Light.otf');
+}
+@font-face {
+  font-family: 'Playfair';
+  src: url('./font/playfair-display/PlayfairDisplay-Regular.otf');
+}
+@font-face {
+  font-family: 'Garamond';
+  src: url('./font/eb-garamond/EBGaramond12-Regular.otf');
+}
+@font-face {
+  font-family: 'Glacial';
+  src: url('./font/glacial/GlacialIndifference-Regular.otf');
+}
+/*HEADER*/
+Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 96vw;
+  
+}
+Header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 10vw;
+  height: 6vh;
+  margin-left: 2em;
+  cursor: pointer;
+}
+/*BUTTON*/
+.designButton {
+  margin: 0 10px;
+  color:#a3543d;
+  font-family: 'Glacial';
+  text-decoration: none;
+  cursor: pointer;
+}
+.designButton:hover {
+  color: #a3543d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*BODY*/
+html {
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f7d1ba;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f7d1ba;
+  color: #362A32;
+}
+
+/*APP HOME*/
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  width: 96vw;
+}
+#cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 40vw;
+}
+
+#principal {
+  height: 35em;
+  border-radius: 15em 1em 1em 1em;
+}
+#cta button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+  width: 8em;
+  margin-top: 1em;
+  margin-right: 3em;
+  padding: 0.5em;
+  border-radius: 1em;
+  font-size: larger;
+  border: 1px solid #a3543d;
+  background-color: #a3543d;
+  color: #f7d1ba;
+  font-family: 'Glacial';
+  cursor: pointer;
+}
+#cta button:hover {
+  background-color: #f7d1ba;
+  color: #a3543d;
+  cursor:pointer;
+}
+#text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-family: 'Playfair';
+}
+#text h1 {
+  font-size: 5em;
+  font-weight: 100;
+  margin: 0;
+}
+#text p {
+  font-size: 1.6em;
+  margin-top: 6em;
+  margin-left:0;
+}
+
+/*LOGIN*/
+
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.login-form-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  padding: 5%;
+  height: 30vh;
+  width: 30vw;
+  background-color: #819582;
+}
+.login-form-1 h3{
+  text-align: center;
+  color: white;
+}
+.login-form-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  padding: 5%;
+  background: #557571;
+  height: 30vh;
+  width: 30vw;
+}
+.login-form-2 h3{
+  text-align: center;
+  color: white;
+}
+input.form-control {
+  width: 100%;
+  margin-bottom: .5em;
+  padding: .5em;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: 1px solid #362A32;
+  font-family: 'Glacial';
+}
+input.form-control::placeholder{
+  color: white;
+  font-family: 'Glacial';
+}
+input {
+  outline: none;  
+}
+.btnSubmit
+{
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+.login-form-1 .btnSubmit{
+  color: white;
+  background-color: #557571;
+  border-color: #557571;
+  border-style: solid;
+  border-width: 1px;
+}
+.login-form-1 .btnSubmit:hover{
+  color: #557571;
+  background-color: white;
+  border-color: #557571;
+  border-style: solid;
+  border-width: 1px;
+}
+.login-form-2 .btnSubmit{
+  background-color: white;
+  color: #557571;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+}
+.login-form-2 .btnSubmit:hover{
+  color: white;
+  background-color: #557571;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/*ABOUT*/
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+  color: #362A32;
+}
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  color: #362A32;
+}
+
+.about-page img {
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  margin: 1em;
+}
+
+/*CONTACT*/
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  width: 96vw;
+  color: #a3543d
+  ;
+}
+.contact__title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-family: 'Glacial';
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-top: 1em;
+}
+iframe {
+  border-radius: 4em;
+  border: 1px solid #a3543d;
+}
+/*NotFound*/
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  color: #a3543d;
+}
+.not-found h1 {
+  font-family: 'Glacial';
+  font-size: 4em;
+  font-weight: 100;
+}
+.not-found p {
+  font-family: 'Glacial';
+  font-size: 9em;
+  margin: 0;
+  color: black;
+}
+.boton {
+  width: 10em;
+  height: 3em;
+  border-radius: 2em;
+  font-family: 'Glacial';
+  cursor: pointer;
+  font-weight: bolder;
+  color: #d6ddd8;
+  background-color: #557571;
+  border-color: #557571;
+}
+.boton:hover {
+  border-color: #557571;
+  color: #557571;
+  background-color: #d6ddd8;
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 96vw;
+  color:#9A653B;
+  font-family: 'Glacial';
+}
+footer p { 
+  margin: 2em;
+}
+
+/*MEDIA QUERIES*/
+@media ( max-width: 319px ){
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    padding-top: 40px;
+  }
+
+  #logo {
+    width: 3em;
+    height: 2em;
+    margin-left: 1em;
+  }
+  nav {
+    font-size: 12px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #principal {
+    height: 15em;
+    border-radius: 10em 1em 1em 1em;
+  }
+  #cta button {
+    margin-left: 0;
+
+  }
+  #text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair';
+    font-size: small;
+  }
+  #text h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  #text p {
+    font-size: 1.2em;
+    margin-top: 3em;
+    margin-left:0;
+    text-align: center;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-form-1{
+    height: 30vh;
+    width: 60vw;
+    font-size: smaller;
+  }
+  .login-form-2{
+    height: 30vh;
+    width: 60vw;
+    font-size: smaller;
+  }
+  .form-group{
+    width: 8em;
+    font-size: smaller;
+  }
+  input::placeholder{
+    font-size: smaller;
+  }
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 96vw;
+  color: #362A32;
+  margin-top: 1em;
+}
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 96vw;
+  color: #362A32;
+}
+.antCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10em !important;
+  width: 15em !important;
+  padding-top: 1em !important;
+  font-size: small !important;
+}
+.about-page img {
+  height: 4em !important;
+  width: 4em !important;
+  margin-top: -1em;
+}
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 96vw;
+  color: #a3543d;
+  background-image: none;
+}
+.not-found h1 {
+  font-family: 'Glacial';
+  font-size: 2em;
+}
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    padding-top: 40px;
+  }
+
+  #logo {
+    width: 7em;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #principal {
+    height: 20em;
+    border-radius: 10em 1em 1em 1em;
+  }
+  #cta button {
+    margin-left: 0;
+
+  }
+  #text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair';
+  }
+  #text h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  #text p {
+    font-size: 1.2em;
+    margin-top: 3em;
+    margin-left:0;
+    text-align: center;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-form-1{
+    height: 30vh;
+    width: 60vw;
+  }
+  .login-form-2{
+    height: 30vh;
+    width: 60vw;
+  }
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 96vw;
+  color: #362A32;
+  margin-top: 1em;
+}
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 96vw;
+  color: #362A32;
+}
+.antCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10em !important;
+  width: 15em !important;
+  padding-top: 1em !important;
+  font-size: small !important;
+}
+.about-page img {
+  height: 4em !important;
+  width: 4em !important;
+  margin-top: -1em;
+}
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 96vw;
+  color: #a3543d;
+  background-image: none;
+}
+.not-found h1 {
+  font-family: 'Glacial';
+  font-size: 2em;
+}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    padding-top: 40px;
+  }
+
+  #logo {
+    width: 7em;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #principal {
+    height: 20em;
+    border-radius: 10em 1em 1em 1em;
+  }
+  #cta button {
+    margin-left: 0;
+
+  }
+  #text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair';
+  }
+  #text h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  #text p {
+    font-size: 1.2em;
+    margin-top: 3em;
+    margin-left:0;
+    text-align: center;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-form-1{
+    height: 30vh;
+    width: 60vw;
+  }
+  .login-form-2{
+    height: 30vh;
+    width: 60vw;
+    padding-bottom: 2em;
+  }
+  .form-group {
+    width: 15em;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 96vw;
+    color: #362A32;
+    margin-top: 1em;
+  }
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    color: #362A32;
+  }
+  .antCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12em !important;
+    width: 15em !important;
+    padding-top: 1em !important;
+    font-size: small !important;
+  }
+  .about-page img {
+    height: 4em !important;
+    width: 4em !important;
+    margin-top: -1em;
+  }
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    color: #a3543d;
+    background-image: none;
+  }
+  .not-found h1 {
+    font-family: 'Glacial';
+    font-size: 2em;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    padding-top: 5em;
+  }
+
+  #logo {
+    width: 9em;
+    height: 4em;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #principal {
+    height: 25em;
+    border-radius: 10em 1em 1em 1em;
+  }
+  #cta button {
+    margin-left: 0;
+
+  }
+  #text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair';
+  }
+  #text h1 {
+    font-size: 4em;
+    text-align: center;
+  }
+  #text p {
+    font-size: 1.5em;
+    margin-top: 3em;
+    margin-left:0;
+    text-align: center;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-form-1{
+    height: 30vh;
+    width: 60vw;
+  }
+  .form-group{
+    width: 25em;
+  }
+  .login-form-2{
+    height: 30vh;
+    width: 60vw;
+    padding-bottom: 2em;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 96vw;
+    color: #362A32;
+    margin-top: 1em;
+  }
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    color: #362A32;
+  }
+  .antCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15em !important;
+    width: 15em !important;
+    padding-top: 1em !important;
+    font-size: small !important;
+  }
+  .about-page img {
+    height: 5em !important;
+    width: 5em !important;
+    margin-top: -1em;
+  }
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    color: #a3543d;
+    background-image: none;
+  }
+  .not-found h1 {
+    font-family: 'Glacial';
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+  #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    padding-top: 40px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #principal {
+    height: 25em;
+    border-radius: 10em 1em 1em 1em;
+  }
+  #cta button {
+    margin-left: 10em;
+
+  }
+  #text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair';
+  }
+  #text h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  #text p {
+    font-size: 1.2em;
+    margin-top: 3em;
+    margin-left:0;
+    text-align: center;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-form-1{
+    height: 40vh;
+    width: 40vw;
+  }
+  .login-form-2{
+    height: 40vh;
+    width: 40vw;
+  }
+  .form-group{
+    width: 20em;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 96vw;
+    color: #362A32;
+    margin-top: 1em;
+  }
+  .about-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    color: #362A32;
+  }
+  .antCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15em !important;
+    width: 20em !important;
+    padding-top: 1em !important;
+    font-size: small !important;
+  }
+  .about-page img {
+    height: 6em !important;
+    width: 6em !important;
+    margin-top: -1em;
+  }
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    color: #a3543d;
+    background-image: none;
+  }
+  .not-found h1 {
+    font-family: 'Glacial';
+    font-size: 2em;
+  }
+}
+
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  #principal {
+    height: 30em;
+    border-radius: 15em 1em 1em 1em;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #cta button {
+    margin-left: 21em;
+  }
+  #text h1 {
+    font-size: 5em;
+  }
+  #text p {
+    font-size: 1.6em;
+    margin-top: 6em;
+    margin-left:0;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-form-1{
+    height: 40vh;
+    width: 40vw;
+  }
+  .login-form-2{
+    height: 40vh;
+    width: 40vw;
+  }
+  .form-group{
+    width: 20em;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 96vw;
+    color: #362A32;
+    margin-top: 1em;
+  }
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    color: #362A32;
+  }
+  .antCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20em !important;
+    width: 25em !important;
+    padding-top: 1em !important;
+    font-size: small !important;
+  }
+  .about-page img {
+    height: 6em !important;
+    width: 6em !important;
+    margin-top: 1em;
+  }
+  
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  #principal {
+    height: 35em;
+    border-radius: 18em 1em 1em 1em;
+  }
+  #cta button {
+    margin-left: 24em;
+  }
+  #text h1 {
+    font-size: 6em;
+  }
+  #text p {
+    font-size: 1.8em;
+    margin-top: 8em;
+    margin-left:0;
+  }
+  .login-form-1{
+    height: 40vh;
+    width: 40vw;
+  }
+  .login-form-2{
+    height: 40vh;
+    width: 40vw;
+  }
+  .form-group{
+    width: 20em;
+  }
+  nav {
+    font-size: larger;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 96vw;
+    color: #362A32;
+    margin-top: 1em;
+  }
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    color: #362A32;
+  }
+  .antCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20em !important;
+    width: 20em !important;
+    padding-top: 1em !important;
+    font-size:medium !important;
+  }
+  .about-page img {
+    height: 8em !important;
+    width: 8em !important;
+    margin-top: 1em;
+  }
+  
+}
+@media (min-width: 1921px){
+  #principal {
+    height: 35em;
+    border-radius: 18em 1em 1em 1em;
+  }
+  #cta button {
+    margin-left: 24em;
+  }
+  #text h1 {
+    font-size: 6em;
+  }
+  #text p {
+    font-size: 1.8em;
+    margin-top: 8em;
+    margin-left:0;
+  }
+  .login-form-1{
+    height: 40vh;
+    width: 40vw;
+  }
+  .login-form-2{
+    height: 40vh;
+    width: 40vw;
+  }
+  .form-group{
+    width: 20em;
+  }
+  nav {
+    font-size: larger;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 96vw;
+    color: #362A32;
+    margin-top: 1em;
+  }
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 107em;
+    color: #362A32;
+    margin:0;
+  }
+  .antCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20em !important;
+    width: 20em !important;
+    padding-top: 1em !important;
+    font-size:medium !important;
+  }
+  .about-page img {
+    height: 8em !important;
+    width: 8em !important;
+    margin-top: 1em;
+  }
+  
+}
+
+
