@@ -20,7 +20,7 @@ export const App = () => {
                         <img src="../../src/img/imagen.png" alt="imagen" id="principal"/>
                         <button onClick={url}>
                             Comenzar <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
-                        </button>            
+                        </button>          
                     </div>
        
         </div>

@@ -3,6 +3,7 @@ import 'antd/dist/antd.css'
 import React from 'react';
 import { WhatsAppOutlined } from '@ant-design/icons';
 
+import { Whatsapp } from '../components/Whatsapp'
 export const Footer = () => {
     return (
         <>
@@ -12,6 +13,7 @@ export const Footer = () => {
                 <p><FontAwesomeIcon icon="fa-solid fa-envelope" /> proyectos@lateua.es</p>
                 <p><FontAwesomeIcon icon="fa-solid fa-house" /> Edificio Lanzadera, La Marina de, Carrer del Moll de la Duana, s/n, 46024 Valencia</p>
                 <p>© 2022 Lateua</p>
+                <div className="what"><Whatsapp /> </div> 
             </footer>
 
         </>

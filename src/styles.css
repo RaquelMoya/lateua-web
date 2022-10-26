@@ -99,6 +99,7 @@ body {
   width: 40vw;
 }
 
+
 #principal {
   height: 35em;
   border-radius: 15em 1em 1em 1em;
@@ -143,6 +144,7 @@ body {
   margin-top: 6em;
   margin-left:0;
 }
+
 
 /*LOGIN*/
 
@@ -311,10 +313,14 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 80vh;
-  width: 100vw;
+  width: 90vw;
   color: #a3543d;
+  background-image: url(../src/img/icon1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30em;
 }
 .not-found h1 {
   font-family: 'Glacial';
@@ -334,7 +340,7 @@ iframe {
   font-family: 'Glacial';
   cursor: pointer;
   font-weight: bolder;
-  color: #d6ddd8;
+  color: white;
   background-color: #557571;
   border-color: #557571;
 }
@@ -362,6 +368,14 @@ footer p {
 
 /*MEDIA QUERIES*/
 @media ( max-width: 319px ){
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
   #container {
     display: flex;
     flex-direction: column;
@@ -386,6 +400,7 @@ footer p {
     align-items: flex-end;
     padding-top: 2em;
     padding-bottom: 2em;
+    margin-top: 2em;
   }
   #principal {
     height: 15em;
@@ -484,10 +499,20 @@ footer p {
   font-family: 'Glacial';
   font-size: 2em;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top:#a3543d 1px solid;
+  margin-top: 3em;
+}
 
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+
   #container {
     display: flex;
     flex-direction: column;
@@ -507,14 +532,21 @@ footer p {
     align-items: flex-end;
     padding-top: 2em;
     padding-bottom: 2em;
+    margin-top: 3em;
   }
   #principal {
     height: 20em;
     border-radius: 10em 1em 1em 1em;
+    margin-left: 2em;
+  }
+  #cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   #cta button {
-    margin-left: 0;
-
+    margin-left: 5em;
   }
   #text {
     display: flex;
@@ -524,11 +556,11 @@ footer p {
     font-family: 'Playfair';
   }
   #text h1 {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
   }
   #text p {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 3em;
     margin-left:0;
     text-align: center;
@@ -595,6 +627,16 @@ footer p {
   font-family: 'Glacial';
   font-size: 2em;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top:#a3543d 1px solid;
+  margin-top: 3em;
+}
+
 }
 @media (min-width: 481px) and (max-width: 767px) {
   #container {
@@ -616,6 +658,7 @@ footer p {
     align-items: flex-end;
     padding-top: 2em;
     padding-bottom: 2em;
+    margin-top: 3em;
   }
   #principal {
     height: 20em;
@@ -707,6 +750,15 @@ footer p {
   .not-found h1 {
     font-family: 'Glacial';
     font-size: 2em;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top:#a3543d 1px solid;
+    margin-top: 3em;
   }
 }
 
@@ -825,6 +877,14 @@ footer p {
     font-family: 'Glacial';
     font-size: 2em;
   }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 1025px) and (max-width: 1279px) {
